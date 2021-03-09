@@ -245,3 +245,47 @@ footer {
 /*End Login*/
 
 /****** Einde popup Style ******/
+
+/***** Begin PopUp Cart *****/
+
+.PopupCart {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.PopupCart a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.PopupCart a:hover {
+    color: #d669bb;
+}
+
+.PopupCart .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+}
+
+@media screen and (max-height: 450px) {
+    .PopupCart {padding-top: 15px;}
+    .PopupCart a {font-size: 18px;}
+}
+
+/***** Einde PopUp Cart *****/
