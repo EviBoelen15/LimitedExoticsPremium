@@ -182,10 +182,9 @@ h2 {
 
 /***** Login Form in popup *****/
 
-#formContent {
+/*#formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background: #fff;
     padding: 30px;
     width: 90%;
     max-width: 450px;
@@ -193,7 +192,7 @@ h2 {
     -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     text-align: center;
-}
+}*/
 
 input[type=button], input[type=submit], input[type=reset]  {
     background-color: #d669bb;
