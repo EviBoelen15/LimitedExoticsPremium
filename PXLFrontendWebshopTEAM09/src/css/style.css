@@ -1,5 +1,7 @@
 body {
-    background-color: #f6f6f6;
+    /*background-color: #f6f6f6;*/
+    background-image: url("../assets/background.png");
+    background-repeat: no-repeat;
     font-size: large;
 }
 header {
@@ -10,7 +12,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0;
+    margin: 1% 0;
 }
 .headItem {
     height: 70px;
@@ -18,6 +20,7 @@ header {
 #searchbar {
     width: 30%;
     margin-top: 50px;
+    border-radius: 25% 25% 50% 30%;
 }
 #logo {
     width: calc(40% - 25px);
@@ -63,6 +66,7 @@ nav ul li a {
 nav ul li a:hover {
     border-top: #d669bb solid 2px;
     border-bottom: #d669bb solid 2px;
+    color: black;
 }
 .promoBanner {
     height:470px;
@@ -81,7 +85,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #d669bb;
+    background-color: #db7c9c;
     color: white;
     text-align: center;
 }
