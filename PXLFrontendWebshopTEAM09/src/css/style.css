@@ -156,6 +156,92 @@ footer {
 
 /****** Begin Popup Style ******/
 
+#loginTitle {
+    text-align: center;
+    color: #d669bb;
+    font-family: Tahoma, Arial, sans-serif;
+    margin-top: 0;
+}
 
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #d669bb;
+}
+.popup .content {
+    overflow: hidden;
+    width: 70%;
+    margin: 5% auto 30px auto;
+}
+
+/*Login*/
+
+.form-control {
+    margin: 1em 0;
+}
+.form-control:focus {
+    box-shadow: none;
+    width: 100%;
+    border-color: #d669bb;
+    transition: border-width 1s;
+}
+
+.username, .password {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #eee;
+    padding-left: 0;
+    font-weight: normal;
+}
+
+.login {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid #d669bb;
+    color: #d669bb;
+    font-weight: bold;
+    transition: all .5s;
+    margin-top: 1em;
+}
+.login:hover {
+    background: #d669bb;
+    color: #fff;
+}
+
+/*End Login*/
 
 /****** Einde popup Style ******/
