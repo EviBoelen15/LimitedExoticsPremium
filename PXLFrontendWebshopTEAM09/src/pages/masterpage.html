@@ -20,7 +20,7 @@
             <a href="index.html"><img src="../assets/Limited_Exotics_logo.png"></a> 
         </div>
         <div id="shoppingcartIcon" class="headItem">
-            <a href="shoppingcart.html"><img src="../assets/BasketIcon.png"></a> 
+            <a href="shoppingcart.html" id="shoppingcartIcon"><img src="../assets/BasketIcon.png"></a> 
         </div>
     </header>
     <nav>
@@ -28,21 +28,27 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="#popup1">Login</a></li>
         </ul>
     </nav>
-    <section class="promoBanner">
-        <img src="../assets/banner.png">
-    </section>
-    <section>
-        <article>
-            
-        </article>
-        <article>
-            
-        </article>
-    </section>
+    <!-- Begin popup -->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Login</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <form>
+                    <input type="text" id="login" name="login" placeholder="login">
+                    <input type="text" id="password" name="login" placeholder="password">
+                    <input type="submit" value="Log In">
+                    <input type="submit" href="#" value="Registreer je nu!">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Einde popup -->
+
     <footer>
         <p>Be reunited with your past. Copyright by LimitedExotics 2021.</p>
     </footer>
