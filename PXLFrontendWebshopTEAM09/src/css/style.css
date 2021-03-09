@@ -248,6 +248,11 @@ footer {
 
 /***** Begin PopUp Cart *****/
 
+.PopupCart h3 {
+    text-align: center;
+    color: #d669bb;
+}
+
 .PopupCart {
     height: 100%;
     width: 0;
@@ -267,7 +272,7 @@ footer {
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    /*transition: 0.3s;*/
 }
 
 .PopupCart a:hover {
