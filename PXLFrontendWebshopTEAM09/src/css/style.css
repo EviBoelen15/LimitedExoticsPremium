@@ -48,6 +48,7 @@ header {
 #shoppingcartIcon img{
     width: 100%;
 }
+
 nav {
     height: 50px;
     margin: 5% 0 0 0;
@@ -250,7 +251,6 @@ footer {
 
 .PopupCart h3 {
     text-align: center;
-    color: #d669bb;
 }
 
 .PopupCart {
