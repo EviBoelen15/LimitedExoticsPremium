@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #f6f6f6;
 }
 header {
     height: 70px;
@@ -26,16 +26,16 @@ header {
     height: calc(70px - 15px);
 }
 #shoppingcartIcon{
-    width: 30%;
+    width: 33%;
     float: right;
-    margin-top: 10px;
+    padding-right: 2%;
 }
 
 #shoppingcartIcon a{
     margin: 10px auto;
     padding: 0.1% 6%;
     width: 45px;
-    border: #d669bb solid 2px;
+    border: #d669bb groove 2px;
     border-radius: 25% 10%;
 }
 #shoppingcartIcon a:hover{
@@ -70,10 +70,59 @@ nav ul li a:hover {
 .promoBanner img {
     width: 100%;
 }
+.content {
+    width: 60%;
+    margin: 2% auto;
+}
 footer {
     text-align: center;
 }
 
+/* START INDEX PAGE */
+#uitgelicht {
+    width: 40%;
+    margin: auto;
+    color: #d669bb;
+    border-bottom: underline #d669bb 5px;
+    text-shadow: #0d0d0d 2px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+}
+.categoryItem {
+    width: 25%;
+    margin: 1%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border:#d669bb dotted 3px;
+    border-radius: 10%;
+}
+.categoryDescription {
+    width: 70%;
+    margin: 40% 10%;
+    line-height: 20px;
+    display: inline-block;
+    padding: 10px 5px;
+    vertical-align: middle;
+}
+.categoryPicture:hover {
+    opacity: 0.3;
+    transition:opacity 1s;
+}
+.categoryPicture {
+    max-width: 100%;
+    position: absolute;
+}
+
+/* END INDEX PAGE */
 
 /****** Begin Popup Style ******/
 h2 {
