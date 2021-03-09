@@ -1,5 +1,6 @@
 body {
     background-color: #f6f6f6;
+    font-size: large;
 }
 header {
     height: 70px;
@@ -23,18 +24,18 @@ header {
     padding-top: 15px;
 }
 #logo img{
-    height: calc(70px - 15px);
+    height: calc(100px - 15px);
 }
 #shoppingcartIcon{
-    width: 33%;
+    width: 30%;
     float: right;
-    padding-right: 2%;
+    padding: 1% 0%;
 }
 
 #shoppingcartIcon a{
     margin: 10px auto;
     padding: 0.1% 6%;
-    width: 45px;
+    width: 21%;
     border: #d669bb groove 2px;
     border-radius: 25% 10%;
 }
@@ -81,10 +82,9 @@ footer {
 /* START INDEX PAGE */
 #uitgelicht {
     width: 40%;
-    margin: auto;
+    margin: 20px auto;
     color: #d669bb;
     border-bottom: underline #d669bb 5px;
-    text-shadow: #0d0d0d 2px;
     text-align: center;
     font-weight: 600;
     font-size: 2.5em;
@@ -96,8 +96,8 @@ footer {
     height: auto;
 }
 .categoryItem {
-    width: 25%;
-    margin: 1%;
+    width: 23%;
+    margin: 0.5%;
     height: auto;
     position: relative;
     overflow: hidden;
