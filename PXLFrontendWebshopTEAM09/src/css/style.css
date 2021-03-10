@@ -94,14 +94,25 @@ footer {
 
 /* START INDEX PAGE */
 #uitgelicht {
-    width: 40%;
+    display: grid;
+    width: 100%;
     margin: 20px auto;
     color: #d669bb;
-    border-bottom: underline #d669bb 5px;
+    /*border-bottom: underline #d669bb 5px;*/
     text-align: center;
+    align-items: center;
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+    grid-gap: 20px;
     font-weight: 600;
     font-size: 2.5em;
 }
+
+#uitgelicht:before,
+#uitgelicht:after {
+    content: '';
+    border-top: 2px dashed black;
+}
+
 .row {
     display: flex;
     flex-direction: row;
