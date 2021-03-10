@@ -110,7 +110,7 @@ footer {
 #uitgelicht:before,
 #uitgelicht:after {
     content: '';
-    border-top: 2px dashed black;
+    border-top: 2px dashed #808080;
 }
 
 .row {
