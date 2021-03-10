@@ -192,6 +192,82 @@ footer {
 }
 /* END INDEX PAGE */
 
+/****** Begin Contact Page ******/
+.contact-in {
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.contact-map {
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.contact-form {
+    width: 100%;
+    height: 320px;
+    flex: 50%;
+    padding: 30px;
+}
+
+.contact-form-text {
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-text::placeholder {
+    color: #aaa;
+}
+
+.contact-form-textarea {
+    width: 100%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-textarea::placeholder {
+    color: #aaa;
+}
+
+.contact-form-btn {
+    padding: 6px 20px;
+    border-radius: 50px;
+    background: none;
+    border: 2px solid #d669bb;
+    color: #d669bb;
+    font-weight: bold;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.contact-form-btn:hover {
+    background: #d669bb;
+    color: #fff;
+}
+/****** Einde Contact Page ******/
+
+
 /* START ABOUT US PAGE */
 .aboutUsInfo h2 {
     font-size: 1.5em;
@@ -305,6 +381,10 @@ h4, .aboutUsInfo p {
     border-bottom: 2px solid #eee;
     padding-left: 0;
     font-weight: normal;
+}
+
+.username::placeholder, .password::placeholder {
+    color: #aaa;
 }
 
 .login {
