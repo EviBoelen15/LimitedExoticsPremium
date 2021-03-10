@@ -4,7 +4,7 @@
     src: url(../assets/fonts/Snufkin.woff);
 }
 body {
-    background-color: #84CEEB;
+    background-color: #c0effc;
     font-family: SampleFont;
     /*background-image: url("../assets/background.png");*/
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ header {
 
 nav {
     height: 65px;
-    margin: 5% 0 0 0;
+    margin: 50px 0 0 0;
     background-color: #db7c9c;
     color: white;
     text-align: center;
