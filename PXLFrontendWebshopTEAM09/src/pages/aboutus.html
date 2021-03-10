@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Limited Exotics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -20,34 +21,91 @@
             <a href="index.html"><img src="../assets/Limited_Exotics_logo.png"></a> 
         </div>
         <div id="shoppingcartIcon" class="headItem">
-            <a href="shoppingcart.html" id="shoppingcartIcon"><img src="../assets/BasketIcon.png"></a> 
+            <a href="#sidePopupCart" onclick="openNav()" id="shoppingcartIcon"><img src="../assets/BasketIcon.png"></a>
+        </div>
+        <div id="sidePopupCart" class="PopupCart">
+            <h3>SHOPPING CART</h3>
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
         </div>
     </header>
     <nav>
         <ul>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="index.html">Promotions</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">About Us</a></li>
+            <li><a href="aboutus.html" class="active" >About Us</a></li>
             <li><a href="#popup1">Login</a></li>
         </ul>
     </nav>
+    <section class="content">
+        <article class="aboutUsInfo">
+            <h4>Wie zijn wij?</h4>
+            <p>Wij zijn een jonge webshop die verschillende soorten discontinued snacks verkopen. 
+                Discontinued snacks zijn snacks die vroeger geproduceerd werden, maar jammer genoeg uit productie zijn gehaald. 
+                Dit was vaak omdat ze niet genoeg verkocht werden, niet veilig genoeg waren of er niet goed uit zagen.  </p>
+            <div id="row">
+                <div class="flex-portret">
+                    <img class="portret" src="../assets/demoPortret.png" alt="portret">
+                    <p class="portretName">Evi</p>
+                </div>
+                <div class="flex-portret">
+                    <img class="portret" src="../assets/demoPortret.png" alt="portret">
+                    <p class="portretName">Brecht</p>
+                </div>
+                <div class="flex-portret">
+                    <img class="portret" src="../assets/demoPortret.png" alt="portret">
+                    <p class="portretName">Ilias</p>
+                </div>
+                <div class="flex-portret">
+                    <img class="portret" src="../assets/demoPortret.png" alt="portret">
+                    <p class="portretName">Dries</p>
+                </div>
+            </div>
+        </article>
+        <article class="aboutUsInfo">
+            <h4>Wat doen we?</h4>
+            <p>Wij verkopen dus "discontinued" snacks. Ons doel is mensen terug te herenigen met de snacks uit hun verleden. 
+                Vandaar onze slogan “Be reunited with the past”. 
+                Ons doelpubliek zijn ook ineens de mensen die een groot gemis hebben voor deze snacks. 
+                Zij zullen via onze website verschillende snacks kunnen bestellen die hun terug in de tijd brengen.</p>
+        </article>
+        <article class="aboutUsInfo">
+            <h4>Waar halen we onze motivatie?</h4>
+            <p>We hebben de motivatie voor deze webshop gehaald bij het feit dat we zelf veel snacks van vroeger missen.
+                één van deze snacks is bijvoorbeeld de zo geliefde "Calippo Shots hierlangs afgebeeld. " </p>
+        </article>
+    </section>
+    
     <!-- Begin popup -->
     <div id="popup1" class="overlay">
         <div class="popup">
-            <h2>Login</h2>
+            <h2 id="loginTitle">Login</h2>
             <a class="close" href="#">&times;</a>
             <div class="content">
                 <form>
-                    <input type="text" id="login" name="login" placeholder="login">
-                    <input type="text" id="password" name="login" placeholder="password">
-                    <input type="submit" value="Log In">
-                    <input type="submit" href="#" value="Registreer je nu!">
+                    <input type="text" name="username" class="username form-control" placeholder="Username"/>
+                    <input type="password" name="password" class="password form-control" placeholder="password"/>
+                    <input class="btn login" type="submit" value="Login" />
+                    <input class="btn login" type="submit" value="Registreer" />
                 </form>
             </div>
         </div>
     </div>
     <!-- Einde popup -->
+
+    <!--- DIt is voor popup cart --->
+    <script>
+        function openNav() {
+            document.getElementById("sidePopupCart").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("sidePopupCart").style.width = "0";
+        }
+    </script>
+
+    <!--- Popup Cart --->
 
     <footer>
         <p>Be reunited with your past. Copyright by LimitedExotics 2021.</p>

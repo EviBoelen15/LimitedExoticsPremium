@@ -1,6 +1,6 @@
 body {
-    /*background-color: #f6f6f6;*/
-    background-image: url("../assets/background.png");
+    background-color: #c0effc;
+    /*background-image: url("../assets/background.png");*/
     background-repeat: no-repeat;
     font-size: large;
 }
@@ -25,10 +25,10 @@ header {
 
 #logo {
     width: calc(40% - 25px);
-    padding-top: 15px;
+    padding-top: 12px;
 }
 #logo img{
-    height: calc(100px - 15px);
+    height: calc(80px - 15px);
 }
 #shoppingcartIcon{
     width: 30%;
@@ -58,6 +58,7 @@ nav ul li {
     list-style-type: none;
     float: left;
     width: 19%;
+    margin: 0px 5px;
     text-align: center;
 }
 nav ul li a {
@@ -65,9 +66,14 @@ nav ul li a {
     text-decoration: none;
     color: black;
 }
-nav ul li a:hover {
+nav ul li a:hover, a.active {
     border-top: #d669bb solid 2px;
     border-bottom: #d669bb solid 2px;
+    color: black;
+}
+ a.active {
+    border-top: #d669bb dashed 2px;
+    border-bottom: #d669bb dashed 2px;
     color: black;
 }
 .promoBanner {
@@ -102,15 +108,15 @@ footer {
     text-align: center;
     align-items: center;
     grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
-    grid-gap: 20px;
+    grid-gap: 15px;
     font-weight: 600;
     font-size: 2.5em;
 }
 
 #uitgelicht:before,
 #uitgelicht:after {
-    content: '';
-    border-top: 2px dashed black;
+    content: ' ';
+    border-top: 2px dashed #d669bb;
 }
 
 .row {
@@ -121,12 +127,14 @@ footer {
 }
 .categoryItem {
     width: 23%;
-    margin: 0.5%;
+    margin: 1%;
+    padding: 0px;
     height: auto;
     position: relative;
     overflow: hidden;
     text-align: center;
     border:#d669bb dotted 3px;
+    background-color: white;
     border-radius: 10%;
 }
 .categoryDescription {
@@ -149,6 +157,11 @@ footer {
     width: 60%;
     margin: auto;
 }
+#signup h2 {
+    width: 80%;
+    margin: 15px auto;
+    text-align: center;
+}
 .subscrintion-form input[type=email]  {
     width: 100%;
 }
@@ -166,6 +179,39 @@ footer {
     font-size: 0.9em;
 }
 /* END INDEX PAGE */
+/* START ABOUT US PAGE */
+h4, .aboutUsInfo p {
+    text-align: center;
+}
+.flex-portret {
+    width: 20%;
+    margin: 1%;
+    padding: 0px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border:#d669bb dotted 3px;
+    background-color: white;
+    border-radius: 10%;
+}
+.portretName {
+    width: 70%;
+    margin: 40% 10%;
+    line-height: 20px;
+    display: inline-block;
+    padding: 10px 5px;
+    vertical-align: middle;
+}
+.portret:hover {
+    opacity: 0.3;
+    transition:opacity 1s;
+}
+.portret {
+    max-width: 100%;
+    position: absolute;
+}
+/* END ABOUT US PAGE */
 
 /****** Begin Popup Style ******/
 
