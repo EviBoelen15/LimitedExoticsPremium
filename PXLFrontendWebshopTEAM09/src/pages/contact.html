@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Limited Exotics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div id="searchbar" class="headItem">
+            <div class="Card">
+                <div class="CardInner">
+                <label>Search for your favourite food</label>
+                  <div class="InputContainer">
+                    <input placeholder="It just can't be pizza..."/>
+                  </div>
+               </div>
+              </div>
+        </div>
+        <div id="logo" class="headItem">
+            <a href="index.html"><img src="../assets/Limited_Exotics_logo.png"></a> 
+        </div>
+        <div id="shoppingcartIcon" class="headItem">
+            <a href="#sidePopupCart" onclick="openNav()" id="shoppingcartIcon"><img src="../assets/BasketIcon.png"></a>
+        </div>
+        <div id="sidePopupCart" class="PopupCart">
+            <h3>SHOPPING CART</h3>
+            <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Categories</a></li>
+            <li><a href="index.html">Promotions</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#popup1">Login</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!--HIER KOMT DE CONTENT VOOR ELKE PAGE IN SECTIONS EN ARTICLES-->
+        <!--ELKE SECTION MOET DE CLASS "CONTENT" GEBRUIKEN VOOR DE JUISTE POSITIONERING-->
+    </section>
+    
+    <!-- Begin popup -->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2 id="loginTitle">Login</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <form>
+                    <input type="text" name="username" class="username form-control" placeholder="Username"/>
+                    <input type="password" name="password" class="password form-control" placeholder="password"/>
+                    <input class="btn login" type="submit" value="Login" />
+                    <input class="btn login" type="submit" value="Registreer" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Einde popup -->
+
+    <!--- DIt is voor popup cart --->
+    <script>
+        function openNav() {
+            document.getElementById("sidePopupCart").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("sidePopupCart").style.width = "0";
+        }
+    </script>
+
+    <!--- Popup Cart --->
+
+    <footer>
+        <p>Be reunited with your past. Copyright by LimitedExotics 2021.</p>
+    </footer>
+</body>
+</html>
