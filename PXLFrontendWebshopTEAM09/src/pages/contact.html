@@ -26,6 +26,7 @@
         <div id="sidePopupCart" class="PopupCart">
             <h3>SHOPPING CART</h3>
             <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+
         </div>
     </header>
     <nav>
@@ -41,6 +42,17 @@
     <section>
         <!--HIER KOMT DE CONTENT VOOR ELKE PAGE IN SECTIONS EN ARTICLES-->
         <!--ELKE SECTION MOET DE CLASS "CONTENT" GEBRUIKEN VOOR DE JUISTE POSITIONERING-->
+        <div class="content">
+            <div class="contact-map"></div>
+            <div class="contact-form">
+                <h1 class="uitgelicht">Contact Us</h1>
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Name" />
+                    <input type="submit" name="Submit" />
+                </form>
+            </div>
+        </div>
     </section>
     
     <!-- Begin popup -->
@@ -64,7 +76,6 @@
     <script>
         function openNav() {
             document.getElementById("sidePopupCart").style.width = "250px";
-            document.body.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
         }
 
         function closeNav() {

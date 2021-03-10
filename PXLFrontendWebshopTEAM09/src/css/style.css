@@ -332,6 +332,22 @@ h4, .aboutUsInfo p {
     text-align: center;
 }
 
+.btnShoppingCart {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: #d669bb;
+    border: 2px solid #d669bb;
+    color: #fff;
+    font-weight: bold;
+    transition: all .5s;
+    margin-top: 1em;
+}
+.btnShoppingCart:hover {
+    background: #84CEEB;
+    color: #fff;
+    border: 2px solid #84CEEB;
+}
+
 .PopupCart {
     height: 100%;
     width: 0;

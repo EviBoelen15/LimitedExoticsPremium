@@ -26,6 +26,7 @@
         <div id="sidePopupCart" class="PopupCart">
             <h3>SHOPPING CART</h3>
             <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+            <input class="btnShoppingCart" type="submit" value="Go To Checkout Page" />
         </div>
     </header>
     <nav>
@@ -93,12 +94,10 @@
     <script>
         function openNav() {
             document.getElementById("sidePopupCart").style.width = "250px";
-            document.body.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
         }
 
         function closeNav() {
             document.getElementById("sidePopupCart").style.width = "0";
-            document.body.style.backgroundColor = "#c0effc";
         }
     </script>
 
