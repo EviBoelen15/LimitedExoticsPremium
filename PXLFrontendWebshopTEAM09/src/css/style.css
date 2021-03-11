@@ -1,4 +1,4 @@
-
+/**** START MASTERPAGE LAYOUT ****/
 @font-face {
     font-family: SampleFont;
     src: url(../assets/fonts/Snufkin.woff);
@@ -10,6 +10,7 @@ body {
     background-repeat: no-repeat;
     font-size: large;
 }
+/* START HEADER */
 header {
     height: 70px;
     display: flex;
@@ -23,14 +24,22 @@ header {
 .headItem {
     height: 70px;
 }
-/* Begin Searchbar */
+/* START SEARCHBAR */
 #searchbar {
     width: 30%;
     margin-top: 50px;
     border-radius: 25% 25% 50% 30%;
 }
+.searchbar {
+    width: 50%;
+}
+#labelSeachbar {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
 
-/* Einde searchbar */
+}
+/* END SEARCHBAR */
 
 #logo {
     width: calc(40% - 25px);
@@ -57,7 +66,9 @@ header {
 #shoppingcartIcon img{
     width: 100%;
 }
+/* END HEADER */
 
+/* START NAV */
 nav {
     height: 65px;
     margin: 50px 0 0 0;
@@ -86,11 +97,14 @@ nav ul li a:hover, a.active {
     border-bottom: #c0effc solid 2px;
     color: black;
 }
- a.active {
+a.active {
     border-top: #c0effc dashed 2px;
     border-bottom: #c0effc dashed 2px;
     color: black;
 }
+/* END NAV */
+
+/* START BANNER */
 .promoBanner {
     height:470px;
     width: 100%;
@@ -98,6 +112,8 @@ nav ul li a:hover, a.active {
 .promoBanner img {
     width: 100%;
 }
+/* END BANNER */
+
 .content {
     width: 60%;
     margin: 2% auto 100px auto;
@@ -113,13 +129,12 @@ footer {
     text-align: center;
 }
 
-/* START INDEX PAGE */
+/*** START INDEX PAGE ***/
 .uitgelicht {
     display: grid;
     width: 100%;
     margin: 20px auto;
     color: #d669bb;
-    /*border-bottom: underline #d669bb 5px;*/
     text-align: center;
     align-items: center;
     grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
@@ -193,9 +208,9 @@ footer {
     border-radius: 2%;
     font-size: 0.9em;
 }
-/* END INDEX PAGE */
+/*** END INDEX PAGE ***/
 
-/****** Begin Contact Page ******/
+/*** START CONTACT PAGE ***/
 .contact-in {
     height: auto;
     margin: auto;
@@ -268,13 +283,11 @@ footer {
     background: #d669bb;
     color: #fff;
 }
-/****** Einde Contact Page ******/
+/*** END CONTACT PAGE ***/
 
-
-/* START ABOUT US PAGE */
+/**** START ABOUT US PAGE ****/
 .aboutUsInfo h2 {
     font-size: 1.5em;
-
 }
 h4, .aboutUsInfo p {
     text-align: center;
@@ -311,17 +324,16 @@ h4, .aboutUsInfo p {
     max-width: 100%;
     position: absolute;
 }
-/* END ABOUT US PAGE */
+/**** END ABOUT US PAGE ****/
 
-/****** Begin Popup Style ******/
-
+/**** START LOGIN POPUP ****/
+/* START LOGIN STYLE */
 #loginTitle {
     text-align: center;
     color: #d669bb;
     font-family: Tahoma, Arial, sans-serif;
     margin-top: 0;
 }
-
 .overlay {
     position: fixed;
     top: 0;
@@ -336,7 +348,6 @@ h4, .aboutUsInfo p {
     visibility: visible;
     opacity: 1;
 }
-
 .popup {
     margin: 70px auto;
     padding: 20px;
@@ -345,7 +356,6 @@ h4, .aboutUsInfo p {
     width: 30%;
     position: relative;
 }
-
 .popup .close {
     position: absolute;
     top: 20px;
@@ -364,9 +374,8 @@ h4, .aboutUsInfo p {
     width: 70%;
     margin: 5% auto 30px auto;
 }
-
-/*Login*/
-
+/* END LOGIN STYLE */
+/* START LOGIN FORM */
 .form-control {
     margin: 1em 0;
 }
@@ -376,7 +385,6 @@ h4, .aboutUsInfo p {
     border-color: #d669bb;
     transition: border-width 1s;
 }
-
 .username, .password {
     border: none;
     border-radius: 0;
@@ -385,11 +393,9 @@ h4, .aboutUsInfo p {
     padding-left: 0;
     font-weight: normal;
 }
-
 .username::placeholder, .password::placeholder {
     color: #aaa;
 }
-
 .login {
     padding: 6px 20px;
     border-radius: 20px;
@@ -404,17 +410,13 @@ h4, .aboutUsInfo p {
     background: #d669bb;
     color: #fff;
 }
+/* END LOGIN FORM */
+/**** END LOGIN POPUP ****/
 
-/*End Login*/
-
-/****** Einde popup Style ******/
-
-/***** Begin PopUp Cart *****/
-
+/**** START SHOPPINGCART POPUP ****/
 .PopupCart h3 {
     text-align: center;
 }
-
 .btnShoppingCart {
     padding: 6px 20px;
     border-radius: 20px;
@@ -430,7 +432,6 @@ h4, .aboutUsInfo p {
     color: #fff;
     border: 2px solid #84CEEB;
 }
-
 .PopupCart {
     height: 100%;
     width: 0;
@@ -443,7 +444,6 @@ h4, .aboutUsInfo p {
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .PopupCart a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -452,11 +452,9 @@ h4, .aboutUsInfo p {
     display: block;
     /*transition: 0.3s;*/
 }
-
 .PopupCart a:hover {
     color: #d669bb;
 }
-
 .PopupCart .closebtn {
     position: absolute;
     top: 0;
@@ -465,10 +463,9 @@ h4, .aboutUsInfo p {
     margin-left: 50px;
     color: black;
 }
-
 @media screen and (max-height: 450px) {
     .PopupCart {padding-top: 15px;}
     .PopupCart a {font-size: 18px;}
 }
 
-/***** Einde PopUp Cart *****/
+/**** END SHOPPINGCART POPUP ****/
